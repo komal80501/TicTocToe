@@ -137,8 +137,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void resetBorad(){
         for(int i=0;i<3;i++){
-            for (int j=0;i<3;j++){
-            buttons[i][j].setText("");
+            for (int j=0;j<3;j++){
+           buttons[i][j].setText("");
             }
         }
         roundCount=0;
@@ -148,7 +148,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void resetGame(){
         player1Points=0;
         player2Points=0;
-        updatePointstext();
         resetBorad();
 
         }
@@ -172,7 +171,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     player2Points=savedInstanceState.getInt("player2Ponits");
     player1Turn=savedInstanceState.getBoolean("player1Turn");
     }
+
 }
+
 
 
 
