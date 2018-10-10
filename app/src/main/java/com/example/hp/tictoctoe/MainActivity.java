@@ -1,5 +1,6 @@
 package com.example.hp.tictoctoe;
 
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -114,19 +115,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
      private void player1Wins(){
         player1Points++;
-         Toast.makeText(this, "Player 1 wins", Toast.LENGTH_SHORT).show();
+         Toast.makeText(this, "Player 1 wins", Toast.LENGTH_LONG).show();
         updatePointstext();
         resetBorad();
     }
 
      private void player2Wins(){
          player2Points++;
-         Toast.makeText(this, "Player 2 wins", Toast.LENGTH_SHORT).show();
+         Toast.makeText(this, "Player 2 wins", Toast.LENGTH_LONG).show();
          updatePointstext();
          resetBorad();
      }
      private void draw(){
-         Toast.makeText(this, "Draw", Toast.LENGTH_SHORT).show();
+         Toast.makeText(this, "Draw", Toast.LENGTH_LONG).show();
          resetBorad();
     }
 
