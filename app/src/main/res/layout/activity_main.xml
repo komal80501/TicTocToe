@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".MainGameActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
             android:id="@+id/text_view_p1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Player 1:0"
+            android:text="Player X:  0"
             android:textColor="@color/colorAccent"
             android:textSize="30sp"
             android:freezesText="true"/>
@@ -24,7 +24,7 @@
             android:id="@+id/text_view_p2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Player 2:0"
+            android:text="Player O:  0"
             android:textColor="@color/colorAccent"
             android:textSize="30sp"
             android:layout_below="@+id/text_view_p1"
@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rest"
-            android:textStyle="bold"
+            android:textSize="24sp"
             android:textColor="@color/colorAccent"
             android:background="@drawable/btnshape"
             android:layout_alignParentEnd="true"
